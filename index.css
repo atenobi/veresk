@@ -31,6 +31,7 @@
 
 .page {
   background-color: #222222;
+  min-height: 45vw;
 }
 
 .footer {
@@ -43,6 +44,12 @@
   width: 100%;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 .title-text {
   font-size: 35px;
   font-family: "Times New Roman", Times, serif;
@@ -52,9 +59,14 @@
 
 .main-text {
   font-size: 20px;
+  margin-top: 20px;
   font-family: "Times New Roman", Times, serif;
   font-weight: 400;
   color: white;
+}
+
+.big-text {
+  font-size: 40px;
 }
 
 .header_container {
@@ -65,23 +77,26 @@
   position: relative;
 }
 
-.header_button, .header_img {
+.header_button,
+.header_img {
   width: 10%;
   height: auto;
   border-radius: 10px;
 }
 
-.header_button {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 10px;
+.header_button, .size-button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
-.header_button:hover, .header_img:hover {
-    color: rgb(241, 81, 81);
-    border: 1px solid rgb(241, 81, 81);
+.size-button:hover,
+.header_button:hover,
+.header_img:hover {
+  color: rgb(241, 81, 81);
+  border: 1px solid rgb(241, 81, 81);
 }
 
 .social-media__menu {
@@ -114,51 +129,51 @@
 }
 
 .footer_container {
-  position: relative;
   text-align: center;
 }
 
 /* responsive for tablets */
 
 @media only screen and (max-width: 768px) {
-    .content-container {
-        padding: 20px 10px 20px;
-    }
+  .content-container {
+    padding: 20px 10px 20px;
+  }
 
-    .header_container {
-        height: 190px;
-    }
+  .header_container {
+    height: 190px;
+  }
 
-    .header_button, .header_img {
-        width: 20%;
-        height: auto;
-    }
+  .header_button,
+  .header_img {
+    width: 20%;
+    height: auto;
+  }
 
-    .social-media__menu {
-        width: 50%;
-    }
+  .social-media__menu {
+    width: 50%;
+  }
 
-    .title-text {
-        font-size: 27px;
-    }
+  .title-text {
+    font-size: 27px;
+  }
 }
 
 /* responsive for mobile devises */
 
 @media only screen and (max-width: 468px) {
-    .title-text {
-        font-size: 24px;
-    }
+  .title-text {
+    font-size: 24px;
+  }
 
-    .social-media__menu {
-        width: 100%;
-    }
+  .social-media__menu {
+    width: 100%;
+  }
 }
 
 /* responsive for small screens */
 
 @media only screen and (max-width: 360px) {
-    .title-text {
-        font-size: 20px;
-    }
+  .title-text {
+    font-size: 20px;
+  }
 }
