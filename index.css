@@ -191,6 +191,21 @@ body {
   text-align: center;
 }
 
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-video {
+  width: 80%;
+  min-height: 500px;
+    height: auto;
+    margin: 0 auto 0;
+    outline: none;
+    border: none;
+}
+
 /* responsive for tablets */
 
 @media only screen and (max-width: 768px) {
@@ -223,6 +238,10 @@ body {
   .subtitle-text {
     font-size: 24px;
   }
+
+  .youtube-video {
+    min-height: 300px;
+  } 
 }
 
 /* responsive for mobile devises */
@@ -239,6 +258,10 @@ body {
   .social-media__menu {
     width: 100%;
   }
+
+  .youtube-video {
+    min-height: 220px;
+  } 
 }
 
 /* responsive for small screens */
@@ -247,4 +270,8 @@ body {
   .title-text {
     font-size: 20px;
   }
+
+  .youtube-video {
+    min-height: 200px;
+  } 
 }
